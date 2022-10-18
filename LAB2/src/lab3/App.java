@@ -4,20 +4,10 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-/**
- * Class App
- * @version 1.0
- * @since version 1.0
- */
+
 
 public class App {
-    /**
-     * Статичний метод main є точкою входу в програму
-     *
-     * @param args
-     * @throws FileNotFoundException
-     *
-     */
+    
     public static void main(String[] args) throws FileNotFoundException {
         int nRows;
 
