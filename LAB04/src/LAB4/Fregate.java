@@ -41,8 +41,7 @@ SendData();
 }
 @Override
 public void SendData() {
-try (FileWriter writer = new FileWriter("Lab4.txt"))
-{
+try (FileWriter writer = new FileWriter("Lab4.txt")){
 writer.write("Пройдена дистанція: " + GetPassedDistance() + "\n");
 writer.write("Максимальна швидкість човна: " + GetMaxSpeed() + "\n");
 writer.write("Залишилось пального: " + GetCurrentFuelVolume() + "\n");
