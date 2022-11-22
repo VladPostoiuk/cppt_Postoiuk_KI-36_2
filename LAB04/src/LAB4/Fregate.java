@@ -2,7 +2,7 @@ package LAB4;
 import static java.lang.System.out;
 import java.io.FileWriter;
 import java.io.IOException;
-public class Fregate extends Ship {
+public class Fregate extends Ship{
 private String name;
 public Fregate(String name,int maxSpeed, double CurrentFuelVolume, double
 fuelConsumption, double maxFuelVolume){

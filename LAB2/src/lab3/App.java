@@ -10,6 +10,7 @@ public class App {
     
     public static void main(String[] args) throws FileNotFoundException {
         int nRows;
+      
 
         String filler;
         Scanner in = new Scanner(System.in);
@@ -19,8 +20,14 @@ public class App {
 
         System.out.print("Enter the size of the square matrix: ");
         nRows = in.nextInt();
+        
         in.nextLine();
-        char[][] arr = new char[nRows][nRows];
+        char[][] arr = new char[nRows][];
+        for (int i = 0; i < nRows; i++) {
+
+            arr[i] = new char[nRows / 2];
+
+    }
 
         System.out.print("\nEnter the placeholder: ");
         filler = in.nextLine();

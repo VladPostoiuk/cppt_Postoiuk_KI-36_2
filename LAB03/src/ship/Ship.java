@@ -8,6 +8,7 @@ private double maxFuelVolume;
 private double CurrentFuelVolume;
 private double fuelConsumption;
 private double passedDistance;
+public static int max=0;
 public Ship() {
 this.currentSpeed = 0;
 }
@@ -24,8 +25,11 @@ this.fuelConsumption = fuelConsumption;
 }
 public Ship(int maxSpeed, double CurrentFuelVolume, double fuelConsumption,
 double maxFuelVolume) {
+	
 this(maxSpeed, CurrentFuelVolume, fuelConsumption);
 this.maxFuelVolume = maxFuelVolume;
+if(maxSpeed>13)
+{max++;}
 }
 public int GetMaxSpeed() {
 return this.maxSpeed;
